@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+import { ClerkProvider } from '@clerk/nextjs'
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
@@ -12,10 +13,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <Navbar/>
-      <body className={inter.className}>{children}</body>
-      <Footer/>
-    </html>
+    <ClerkProvider>
+      <html lang="en">
+        <Navbar/>
+        <body className={inter.className}>{children}</body>
+        <Footer/>
+      </html>
+    </ClerkProvider>
   );
 }
