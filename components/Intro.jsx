@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Hero = () => {
+const Intro = () => {
   return (
     <div className='w-full bg-black text-white'>
-      Hero
+        Intro
     </div>
   )
 }
 
-export default Hero
+export default Intro

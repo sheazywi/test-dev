@@ -56,11 +56,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html>
+    <html className="scroll-smooth bg-black">
       <body>
         <Navbar />
           <main>
-            <body className={inter.className}>{children}</body>
+            <div className={inter.className}>{children}</div>
           </main>
         <Footer />
       </body>
