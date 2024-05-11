@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const navLists = ["Home", "About", "Blog", "Careers", "Projects", "Contact"];
+export const navLists = ["Home", "About", "Blog", "Projects"];
 
 export const metadata = {
   title: "Starbounded",

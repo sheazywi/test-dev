@@ -6,13 +6,13 @@ import { BiSolidDashboard } from "react-icons/bi";
 
 const Navbar = () => {
   return (
-    <header className='w-full py-5 sm:px-10 px-5 flex justify-between items-center'>
+    <header className='w-full py-5 sm:px-10 px-5 flex justify-between items-center bg-black'>
       <nav className='flex w-full screen-max-width'>
-        {/*<Image src={logo} alt="Logo" width={48} height={48}/>*/}
+        {<Image className='' src={logo} alt="Logo" width={48} height={48}/>}
 
-        <div className='flex flex-1 justify-center max-sm:hidden'>
+        <div className='flex flex-1 justify-center max-sm:hidden '>
           {navLists.map((nav) => (
-            <div key={nav} className='px-5 text-sm cursor-pointer text-gray-500 hover:text-white transition-all'>
+            <div key={nav} className='px-10 cursor-pointer text-gray-500 hover:text-white transition-all place-content-center text-lg'>
               {nav}
             </div>
           ))}
