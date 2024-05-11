@@ -3,6 +3,7 @@ import Image from 'next/image';
 import logo from '@/public/assets/images/logo.png';
 import { navLists } from '@/app/layout';
 import { IoSearchSharp } from "react-icons/io5";
+import Link from 'next/link';
 
 const Navbar = () => {
   return (
@@ -12,9 +13,15 @@ const Navbar = () => {
         {<p className='text-3xl text-white'>starbounded</p>}
 
         <div className='flex flex-1 justify-center max-sm:hidden '>
-          {navLists.map((nav) => (
-            <div key={nav} className='px-10 cursor-pointer text-gray-500 hover:text-white transition-all place-content-center text-lg'>
-              {nav}
+        {navLists.map(({ id, link, name }) => (
+            <div key={id} className='px-10 cursor-pointer text-gray-500 hover:text-white transition-all place-content-center text-lg'>
+              <div>
+                <Link href={link}>
+                  <p>
+                    {name}
+                  </p>
+                </Link>
+              </div>
             </div>
           ))}
         </div>
