@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const navLists = ["Home", "About", "Blog", "Careers", "Contact", "Projects"];
+export const navLists = ["Home", "About", "Blog", "Careers", "Projects", "Contact"];
 
 export const metadata = {
   title: "Starbounded",
@@ -15,12 +15,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html>
-      <body>
-      <Navbar />
-        <main>
-          <body className={inter.className}>{children}</body>
-        </main>
-      <Footer />
+      <body className="bg-black">
+        <Navbar />
+          <main>
+            <body className={inter.className}>{children}</body>
+          </main>
+        <Footer />
       </body>
     </html>
   );
