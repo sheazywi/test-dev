@@ -13,17 +13,17 @@ const Navbar = () => {
         {<p className='text-3xl text-white'>starbounded</p>}
 
         <div className='flex flex-1 justify-center max-sm:hidden '>
-        {navLists.map(({ id, link, name }) => (
-            <div key={id} className='px-10 cursor-pointer text-gray-500 hover:text-white transition-all place-content-center text-lg'>
-              <div>
-                <Link href={link}>
-                  <p>
-                    {name}
-                  </p>
-                </Link>
+          {navLists.map(({ id, link, name }) => (
+              <div key={id} className='px-10 text-gray-500 transition-all place-content-center text-lg'>
+                <div>
+                  <Link href={link}>
+                    <p className='cursor-pointer hover:text-white'>
+                      {name}
+                    </p>
+                  </Link>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
         </div>
 
         {/*<div className='flex items-baseline gap-7 max-sm:justify-end max-sm:flex-1 justify-center'>
