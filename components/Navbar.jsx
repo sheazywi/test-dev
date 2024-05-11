@@ -8,7 +8,7 @@ import Link from 'next/link';
 const Navbar = () => {
   return (
     <header className='w-full py-5 sm:px-10 px-5 flex justify-between items-center bg-black'>
-      <nav className='flex w-full screen-max-width'>
+      <nav className='flex w-full screen-max-width navbar'>
         {/*<Image src={logo} alt="Logo" width={48} height={48}/>*/}
         {<p className='text-3xl text-white'>starbounded</p>}
 

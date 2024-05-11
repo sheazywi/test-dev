@@ -27,6 +27,28 @@ export const navLists = [
     name: "Projects",
   }];
 
+export const team = [
+  {
+    id: 1,
+    name: "Pier-Olivier Boulianne",
+    image: "@/public/assets/images/people/pier-olivier-boulianne.jpg",
+    position: "CEO",
+  },
+  {
+    id: 2,
+    name: "Xavier McKoy",
+    image: "@/public/assets/images/people/xavier-mckoy.png",
+    position: "Marketing Manager",
+  },
+  {
+    id: 3,
+    name: "Renaud Metlej",
+    image: "@/public/assets/images/people/renaud-metlej.png",
+    position: "Project Manager",
+  }
+
+]
+
 export const metadata = {
   title: "Starbounded",
   description: "Made with Next.JS and TailwindCSS",
