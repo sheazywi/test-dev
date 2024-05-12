@@ -31,7 +31,7 @@ export const team = [
   {
     id: 1,
     name: "Pier-Olivier Boulianne",
-    image: "@/public/assets/images/people/pier-olivier-boulianne.jpg",
+    image: "@/public/assets/images/people/pier-olivier-boulianne.png",
     position: "CEO",
   },
   {
