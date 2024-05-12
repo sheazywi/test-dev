@@ -8,11 +8,11 @@ import Link from 'next/link';
 const Navbar = () => {
   return (
     <header className='w-full py-5 sm:px-10 px-5 flex justify-between items-center bg-black'>
-      <nav className='flex w-full screen-max-width navbar'>
+      <nav className='flex w-full navbar max-w-7xl gap-5 mx-auto justify-between'>
         {/*<Image src={logo} alt="Logo" width={48} height={48}/>*/}
         {<p className='text-3xl text-white'>starbounded</p>}
 
-        <div className='flex flex-1 justify-center max-sm:hidden '>
+        <div className='flex max-md:hidden'>
           {navLists.map(({ id, link, name }) => (
               <div key={id} className='px-10 text-gray-500 transition-all place-content-center text-lg'>
                 <div>

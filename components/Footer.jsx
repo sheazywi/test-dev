@@ -12,7 +12,7 @@ const Footer = () => {
         </div>
         <Separator className="my-5" />
         <div className="flex flex-1 justify-center space-x-4 text-normal">
-          <p>Copyright &copy; 2024</p>
+          <p>Copyright &copy; 2024 Starbounded Inc.</p>
           <p>All rights reserved</p>
         </div>
       </div>
