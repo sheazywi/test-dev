@@ -7,7 +7,7 @@ import { Separator } from "@/components/ui/separator"
 
 const Team = () => {
   return (
-    <section className="relative w-full mx-auto bg-black h-[60vh]">
+    <section className="relative w-full mx-auto bg-black h-screen">
         <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
           {team.map(({ id, name, image, description, position }) => (
             <div key={id} className='px-10 w-full h-full bg-clip-border justify-around rounded-lg text-lg bg-black border-4 border-violet-600'>
