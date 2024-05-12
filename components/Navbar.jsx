@@ -3,7 +3,6 @@ import Image from 'next/image';
 import logo from '@/public/assets/images/logo.png';
 import { navLists } from '@/app/layout';
 import { IoSearchSharp } from "react-icons/io5";
-import { RxHamburgerMenu } from "react-icons/rx";
 import Link from 'next/link';
 
 const Navbar = () => {
