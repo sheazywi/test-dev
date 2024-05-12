@@ -81,6 +81,11 @@
   bottom: 0;
 }
 
+.navbar {
+  left: 0;
+  top: 0;
+}
+
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;
