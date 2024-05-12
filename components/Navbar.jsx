@@ -7,14 +7,14 @@ import Link from 'next/link';
 
 const Navbar = () => {
   return (
-    <header className='w-full py-5 px-5 flex justify-between items-center bg-black'>
-      <nav className='flex w-full navbar max-w-7xl gap-5 mx-auto justify-between'>
+    <header className='w-full py-4 px-4 flex justify-between items-center bg-black'>
+      <nav className='flex w-full navbar max-w-4xl gap-2 mx-auto justify-between'>
         {/*<Image src={logo} alt="Logo" width={48} height={48}/>*/}
         {<p className='md:text-3xl max-md:text-2xl text-white'>starbounded</p>}
 
         <div className='flex'>
             {navLists.map(({ id, link, name }) => (
-                <div key={id} className='max-md:px-6 md:px-10 md:text-lg max-md:text-normal text-gray-500 transition-all place-content-center'>
+                <div key={id} className='max-md:px-4 md:px-10 md:text-lg max-md:text-normal text-gray-500 transition-all place-content-center'>
                   <div>
                     <Link href={link}>
                       <p className='cursor-pointer hover:text-white'>
