@@ -31,19 +31,22 @@ export const team = [
   {
     id: 1,
     name: "Pier-Olivier Boulianne",
-    image: "@/public/assets/images/people/pier-olivier-boulianne.png",
+    image: "pboulianne.png",
+    description: "Pier-Olivier Boulianne is a French software engineer and founder of Starbounded.",
     position: "CEO",
   },
   {
     id: 2,
     name: "Xavier McKoy",
-    image: "@/public/assets/images/people/xavier-mckoy.png",
+    image: "xmckoy.png",
+    description: "Xavier McKoy is a French software engineer and marketing manager of Starbounded.",
     position: "Marketing Manager",
   },
   {
     id: 3,
     name: "Renaud Metlej",
-    image: "@/public/assets/images/people/renaud-metlej.png",
+    image: "rmetlej.png",
+    description: "Renaud Metlej is a French software engineer and project manager of Starbounded.",
     position: "Project Manager",
   }
 
