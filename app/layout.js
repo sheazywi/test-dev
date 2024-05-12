@@ -13,16 +13,11 @@ export const navLists = [
   }, 
   {
     id:2,
-    link: "/about",
-    name: "About",
-  }, 
-  {
-    id:3,
     link: "/blog",
     name: "Blog",
   }, 
   {
-    id:4,
+    id:3,
     link: "/projects",
     name: "Projects",
   }];
