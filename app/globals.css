@@ -75,15 +75,8 @@
   }
 }
 
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-}
-
-.navbar {
-  left: 0;
-  top: 0;
+.blue-background {
+  background-color: rgb(30, 41, 59);
 }
 
 .hash-span {

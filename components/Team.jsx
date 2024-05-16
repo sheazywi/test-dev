@@ -1,39 +1,52 @@
-import React from 'react';
-import Image from 'next/image';
-import { styles } from '@/app/styles';
-import { team } from '@/app/layout';
-import { Skeleton } from "@/components/ui/skeleton"
-import { Separator } from "@/components/ui/separator"
+import Image from "next/image";
 
-const Team = () => {
-  return (
-    <section className="relative w-full mx-auto bg-black h-screen">
-        <div className={`${styles.paddingX} absolute inset-0 top-[120px] mb-20 max-w-7xl mx-auto flex flex-row items-start gap-5`}>
-          {team.map(({ id, name, image, description, position }) => (
-            <div key={id} className='px-10 w-full h-full bg-clip-border justify-around rounded-lg text-lg bg-black border-4 border-violet-600'>
-              <div className='text-gray-500'>
-                <div className='mt-12 flex items-center justify-center'>
-                  <Image className='rounded-full' src={`/assets/images/people/${image}`} alt={name} width={256} height={256} />
+const people = [
+    {
+        name: 'Pier-Olivier Boulianne',
+        role: 'CEO / Co-Founder',
+        imageUrl:
+            '/assets/images/people/pboulianne.png',
+    },
+    {
+        name: 'Xavier McKoy',
+        role: 'Marketing Manager / Co-Founder',
+        imageUrl:
+            '/assets/images/people/pboulianne.png',
+    },
+    {
+        name: 'Renaud Metlej',
+        role: 'Product Manager / Co-Founder',
+        imageUrl:
+            '/assets/images/people/pboulianne.png',
+    },
+    // More people...
+]
+
+export default function Team() {
+    return (
+        <div className="bg-white py-24 sm:py-32" id="team">
+            <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
+                <div className="max-w-2xl">
+                    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet our leadership</h2>
+                    <p className="mt-6 text-lg leading-8 text-gray-600">
+                        Libero fames augue nisl porttitor nisi, quis. Id ac elit odio vitae elementum enim vitae ullamcorper
+                        suspendisse.
+                    </p>
                 </div>
-                <div className='flex flex-col items-center mt-12 text-2xl md:text-normal'>
-                  <p>
-                    <b>{name}</b>
-                  </p>
-                  <p>
-                    <b>{position}</b>
-                  </p>
-                </div>
-                <div>
-                  <p className='text-center mt-8 lg:text-normal dm:text-xs'>
-                    {description}
-                  </p>
-                </div>
-              </div>
+                <ul role="list" className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+                    {people.map((person) => (
+                        <li key={person.name}>
+                            <div className="flex items-center gap-x-6">
+                                <Image className="h-16 w-16 rounded-full" src={person.imageUrl} alt="" width={250} height={250} />
+                                <div>
+                                    <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
+                                    <p className="text-sm font-semibold leading-6 text-indigo-600">{person.role}</p>
+                                </div>
+                            </div>
+                        </li>
+                    ))}
+                </ul>
             </div>
-          ))}
         </div>
-    </section>
-  )
+    )
 }
-
-export default Team
