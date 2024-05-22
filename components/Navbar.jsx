@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import logo from '@/public/assets/images/logo.png';
+import logo from '@/public/static/images/logo.png';
 import { navLists } from '@/app/layout';
 import { IoSearchSharp } from "react-icons/io5";
 import Link from 'next/link';
