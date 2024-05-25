@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Skeleton } from "@/components/ui/skeleton"
 
 const people = [
     {
@@ -12,13 +11,13 @@ const people = [
         name: 'Xavier McKoy',
         role: 'Marketing Manager / Co-Founder',
         imageUrl:
-            '/static/images/people/pboulianne.png',
+            'https://sheazywi.github.io/test-dev/static/images/people/xmckoy.png',
     },
     {
         name: 'Renaud Metlej',
         role: 'Product Manager / Co-Founder',
         imageUrl:
-            '/static/images/people/pboulianne.png',
+            'https://sheazywi.github.io/test-dev/static/images/people/rmetlej.png',
     },
     // More people...
 ]
