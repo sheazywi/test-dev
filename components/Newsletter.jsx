@@ -1,4 +1,8 @@
-import { CalendarDaysIcon, HandRaisedIcon } from '@heroicons/react/24/outline'
+"use client";
+
+import { CalendarDaysIcon, HandRaisedIcon } from '@heroicons/react/24/outline';
+import { toast } from "sonner";
+
 
 export default function Newsletter() {
     return (
@@ -27,6 +31,10 @@ export default function Newsletter() {
                             <button
                                 type="submit"
                                 className="flex-none rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                                onClick={() =>
+                                    toast.success("Subscribed to our newsletter", {
+                                    })
+                                }
                             >
                                 Subscribe
                             </button>

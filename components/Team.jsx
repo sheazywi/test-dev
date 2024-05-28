@@ -1,24 +1,23 @@
 import Image from "next/image";
-import { Skeleton } from "@/components/ui/skeleton"
 
 const people = [
     {
         name: 'Pier-Olivier Boulianne',
         role: 'CEO / Co-Founder',
         imageUrl:
-            '/static/images/people/pboulianne.png',
+            'https://sheazywi.github.io/test-dev/static/images/people/pboulianne.png',
     },
     {
         name: 'Xavier McKoy',
         role: 'Marketing Manager / Co-Founder',
         imageUrl:
-            '/static/images/people/pboulianne.png',
+            'https://sheazywi.github.io/test-dev/static/images/people/xmckoy.png',
     },
     {
         name: 'Renaud Metlej',
         role: 'Product Manager / Co-Founder',
         imageUrl:
-            '/static/images/people/pboulianne.png',
+            'https://sheazywi.github.io/test-dev/static/images/people/rmetlej.png',
     },
     // More people...
 ]
@@ -38,9 +37,7 @@ export default function Team() {
                     {people.map((person) => (
                         <li key={person.name}>
                             <div className="flex items-center gap-x-6">
-                                <Skeleton className="rounded-full">
-                                    <Image className="h-16 w-16 rounded-full" src={person.imageUrl} alt="" placeholder="blur" width={256} height={256} />
-                                </Skeleton>
+                                <Image className="h-16 w-16 rounded-full" src={person.imageUrl} alt="" placeholder="blur" blurDataURL={person.imageUrl} width={256} height={256} />
                                 <div>
                                     <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
                                     <p className="text-sm font-semibold leading-6 text-indigo-600">{person.role}</p>
