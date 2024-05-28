@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <header className='w-full py-4 px-4 flex justify-between items-center bg-black'>
       <nav className='flex w-full navbar max-w-4xl gap-2 mx-auto justify-between'>
-        {<Image src={logo} alt="Logo" width={48} height={48}/>}
+        {/*<Image src={logo} alt="Logo" width={48} height={48}/>*/}
         {<p className='md:text-3xl max-md:text-2xl text-white'>starbounded</p>}
 
         <div className='flex'>
