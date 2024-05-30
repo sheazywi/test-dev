@@ -3,19 +3,19 @@ import Image from "next/image";
 const people = [
     {
         name: 'Pier-Olivier Boulianne',
-        role: 'CEO / Co-Founder',
+        role: 'CEO / Founder',
         imageUrl:
             'https://sheazywi.github.io/test-dev/static/images/people/pboulianne.png',
     },
     {
         name: 'Xavier McKoy',
-        role: 'Marketing Manager / Co-Founder',
+        role: 'COO / Co-Founder',
         imageUrl:
             'https://sheazywi.github.io/test-dev/static/images/people/xmckoy.png',
     },
     {
         name: 'Renaud Metlej',
-        role: 'Product Manager / Co-Founder',
+        role: 'CFO / Co-Founder',
         imageUrl:
             'https://sheazywi.github.io/test-dev/static/images/people/rmetlej.png',
     },
