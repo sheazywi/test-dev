@@ -3,9 +3,9 @@ module.exports = {
         remotePatterns: [
             {
                 protocol: 'https',
-                hostname: 'sheazywi.github.io',
+                hostname: 'starbounded-website.vercel.app',
                 port: '',
-                pathname: '/test-dev/**',
+                pathname: '/**',
             },
         ],
     },

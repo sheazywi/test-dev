@@ -5,19 +5,19 @@ const people = [
         name: 'Pier-Olivier Boulianne',
         role: 'CEO / Founder',
         imageUrl:
-            'https://sheazywi.github.io/test-dev/static/images/people/pboulianne.png',
+            'https://starbounded.me/static/images/people/pboulianne.png',
     },
     {
         name: 'Xavier McKoy',
         role: 'COO / Co-Founder',
         imageUrl:
-            'https://sheazywi.github.io/test-dev/static/images/people/xmckoy.png',
+            'https://starbounded.me/static/images/people/xmckoy.png',
     },
     {
         name: 'Renaud Metlej',
         role: 'CFO / Co-Founder',
         imageUrl:
-            'https://sheazywi.github.io/test-dev/static/images/people/rmetlej.png',
+            'https://starbounded.me/test-dev/static/images/people/rmetlej.png',
     },
     // More people...
 ]

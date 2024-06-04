@@ -4,7 +4,7 @@ export default async function handler(req, res) {
     if (req.method === 'POST') {
         const { db, client } = await connectToDatabase();
 
-        const collection = db.collection('subscriptions');
+        const collection = db.collection('subscribers');
 
         const { email } = req.body;
 
