@@ -2,23 +2,38 @@
 
 import { CalendarDaysIcon, HandRaisedIcon } from '@heroicons/react/24/outline';
 import { toast } from "sonner";
+import { connectToDatabase } from '@/mongo';
 
 import React, { useState } from 'react';
-import axios from "axios";
 
 
 export default function Newsletter() {
     const [email, setEmail] = useState('');
 
+
+
     const handleSubmit = async (event) => {
         event.preventDefault();
 
+        const { db, client } = await connectToDatabase()
+
+        const collection = db.collection('subscribers');
+
+        const { email } = email;
+
+        if (!email) {
+            toast.error('Email is required');
+            return;
+        }
+
         try {
-            const response = await axios.post('/api/subscribe', { email });
-            toast.success(response.data.message);
+            await collection.insertOne({ email });
+            toast.success('Subscription successful');
         } catch (error) {
             console.error(error);
             toast.error('An error occurred while subscribing');
+        } finally {
+            await client.close();
         }
     };
 
